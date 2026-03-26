@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <title>Bank Transfer - Lakeside Store</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .transfer-page{
+            width: 80%;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .transfer-page h1{
+            margin-bottom: 20px;
+        }
+
+        .transfer-details{
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        .transfer-details p{
+            margin: 10px 0;
+        }
+
+        .account-info{
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .btn{
+            display: inline-block;
+            padding: 12px 18px;
+            background-color: #f68b1e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover{
+            background-color: #d9730d;
+        }
+
+        .back-link{
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #f68b1e;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="transfer-page">
+        <h1>Bank Transfer Payment</h1>
+        <div class="transfer-details">
+            <p>Please complete your bank transfer using the details below. Once the transfer is made, your order will be processed.</p>
+            <div class="account-info">
+                <p><strong>Bank Name:</strong> Lakeside Bank</p>
+                <p><strong>Account Name:</strong> Lakeside Store</p>
+                <p><strong>Account Number:</strong> 1234567890</p>
+                <p><strong>Routing Number:</strong> 0987654321</p>
+                <p><strong>Amount:</strong> ₦200,000</p>
+            </div>
+            <p>Include your order reference in the transfer description if possible.</p>
+            <p>Transfers usually take 1-3 business days to process.</p>
+        </div>
+        <br>
+        <a class="btn" href="thank-you.html">I Have Completed the Transfer</a>
+        <br>
+        <a class="back-link" href="Payment.html">Back to Payment Options</a>
+    </div>  
+</body>
+</html>

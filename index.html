@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lakeside Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .topbar {
+            background-color: #f68b1e;
+            color: white;
+            padding: 15px;
+        }
+
+        .topbar h1 {
+            margin: 0;
+        }
+        .topbar p {
+            margin: 5px 0 0 0;
+        }
+
+        .header-table {
+            width: 100%;
+        }
+
+        .search-section {
+            background-color: white;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-box {
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .btn {
+            padding: 10px 15px;
+            background-color: #f68b1e;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .btn:hover{
+            background-color:#d9730d;
+            box-shadow: #222 0px 2px 5px;
+        }
+
+        .main-table {
+            width: 100%;
+            padding: 10px;
+
+        }
+
+        .categories {
+            width: 22%;
+            background-color: white;
+            vertical-align: top;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        .categories ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .categories ul{
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .banner {
+            width: 78%;
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        .banner img {
+            width:90%;
+            max-height:320px;
+            border-radius: 10px;
+        }
+
+        .section-title {
+            margin: 20px;
+            color: #333;
+        }
+        
+        .product-table {
+            width: 100%;
+            border-spacing: 20px;
+            padding: 0 20px 20px 20px;
+        }
+    
+
+        .product-card {
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            width: 25%;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .product-card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        
+        }
+        .footer {
+            background-color: #222;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer p {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topbar" >
+        <table class="header-table">
+            <tr>
+                <td>
+                    <h1>LAKESIDE STORE</h1>
+                    <p>Your online shopping place</p>
+                </td>
+                <td align="right">
+                    <p>Welcome, User</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="search-section">
+        <table width="100%">
+            <tr>
+                <td width="70%">
+                    <input type="text" class="search-box" placeholder="Search for products">
+                    <button class="btn">Search</button>
+                </td>
+                <td align="right">
+                    <button class="btn">Login</button>
+                    <button class="btn">Cart</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <table class="main-table">
+        <tr>
+            <td class="categories">
+                <h3>Categories</h3>
+                <ul class="category-menu">
+                    <li>Phones</li>
+                    <li>Laptops</li>
+                    <li>Fashion</li>
+                    <li>Electronics</li>
+                    <li>Home Appliances</li>
+                    <li>Beauty</li>
+                </ul>
+            </td>
+
+            <td class="banner">
+                <h2>BLACK FRIDAY SALES</h2>
+                <p>Shop your favorite products at amazing prices</p>
+                <img src="Black friday 2.png" width="80%" height="300" alt="Black Friday Sales">
+            </td>
+        </tr>
+    </table>
+
+    <h2 class="section-title">Top Deals</h2>
+
+    <table class="product-table">
+        <tr>
+            <td class="product-card">
+                <h3>Samsung Galaxy S26</h3>
+                <a href="samsung-galaxy-s26.html">
+                  <img src="samsung-galaxy-s26.jpg" alt="Samsung S26">
+             </a>
+                  <h3><a href="samsung-galaxy-s26.html">Samsung S26</a></h3>
+                <p>₦200,000</p>
+                <button class="btn">Buy Now</button>
+            </td>
+
+            <td class="product-card">
+                <h3>iPhone 17 Pro Max</h3>
+                <a href="iphone-17-promax.html">
+                  <img src="iphone-17-promax.png" alt="iPhone 17 Pro Max">
+                </a>
+                  <h3><a href="iphone-17-promax.html">Iphone 17 Pro Max</a></h3>
+                <p>₦280,000</p>
+                <button class="btn">Buy Now</button>
+            </td>
+
+            <td class="product-card">
+                <h3>AirPods Pro</h3>
+                <a href="airpods-pro.html">
+                 <img src="airpods-pro.jpg" alt="AirPods Pro">
+                </a>
+                  <h3><a href="airpods-pro.html">Airpods Pro</a></h3> 
+                <p>₦25,000</p>
+                <button class="btn">Buy Now</button>
+            </td>
+
+            <td class="product-card">
+                <h3>Smart Watch</h3>
+                <a href="smart-watch.html">
+                  <img src="smart-watch.jpg" alt="Smart Watch">
+                </a>
+                 <h3><a href="smart-watch.html">Smart Watch</a></h3>  
+                <p>₦18,000</p>
+                <button class="btn">Buy Now</button>
+            </td>
+        </tr>
+    </table>
+
+    <h2 class="section-title">Recommended For You</h2>
+
+    <table class="product-table">
+        <tr>
+            <td class="product-card">
+                <h3>Laptop Bag</h3>
+                <img src="bag.png" alt="Laptop Bag">
+                <p>₦12,000</p>
+                <button class="btn">Buy Now</button>
+            </td>
+
+            <td class="product-card">
+             <a href="samsung-a25.html">
+                  <img src="samsung-a25.png" alt="Samsung A25">
+             </a>
+                  <h3><a href="samsung-a25.html">Samsung A25</a></h3>
+                <p>₦200,000</p>
+                <button class="btn">Buy Now</button>
+            </td>
+
+            <td class="product-card">
+                <h3>Bluetooth Speaker</h3>
+                <img src="bluetooth-speaker.png" alt="Bluetooth Speaker">
+                <p>₦30,000</p>
+                <button class="btn">Buy Now</button>
+            </td>
+
+            <td class="product-card">
+                <h3>Wireless Headphone</h3>
+                <img src="wireless-headphone.jpg" alt="Wireless Headphone">
+                <p>₦22,000</p>
+                <button class="btn">Buy Now</button>
+            </td>
+        </tr>
+    </table>
+
+    <div class="footer">
+        <h2>Customer Service</h2>
+        <p>Help Center | Returns | Delivery Information</p>
+        <p>&copy; 2026 Lakeside Store. All rights reserved.</p>
+        <p>Email: lakesidestore@gmail.com | Phone: 08012345678</p>
+    </div>
+
+</body>
+</html>
